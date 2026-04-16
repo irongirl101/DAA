@@ -11,8 +11,8 @@ Your algorithm should consider three possibilities:
 ### Tasks
 - [x] Design the divide-and-conquer algorithm.
 - [x] Implement the algorithm
-- [ ] Derive the recurrence relation for the running time.
-- [ ] Solve the recurrence using the Master Theorem.
-- [ ] Compare the performance with the brute-force O(n?) solution.
+- [x] Derive the recurrence relation for the running time.
+- [x] Solve the recurrence using the Master Theorem.
+- [x] Compare the performance with the brute-force O(n?) solution.
 
 ### Statement Handled by Piya Banerjee - PES1UG25CS830
