@@ -24,23 +24,26 @@ Check main.c
 Using the example provided - {1,3,4} ; amount = 6 
 Refer above - this is a case of a non canonical coin system. 
 If we were to go about this using the greedy approach 
-    Max Value = 4 
+``` Max Value = 4 
     6 - 4 = 2
     Max Value = 1 
     2 - 1 = 1
     Max Value = 1
+``` 
 This requires 3 coins 
+
 But in the optimal way, the answer would be 
-    3 + 3 = 6 
+    ```3 + 3 = 6 ```
 which requires only 2 coins. 
 
 Another example would be {1,5,6,9}; amount = 11 
-Using greedy: 
+```Using greedy: 
     9 + 1 + 1 = 11 
     3 coins. 
 Using optimal: 
     5 + 6 = 11
-    2 coins. 
+    2 coins.
+```
 
 ## 4. Use an appropriate data structure to efficiently track coins. 
 An array would be used. 
