@@ -6,7 +6,7 @@ You are given n coins with denominations d1, d2, ..., dn (not necessarily the st
 - [x] Implement the algorithm
 - [x] Discuss cases where the greedy strategy may not yield the optimal solution (eg.,coins {1, 3, 4} for amount 6).
 - [ ] Use an appropriate data structure to efficiently track coins. 
-- [ ] Analyze the time complexity. 
+- [x] Analyze the time complexity. 
 - [ ] Test the algorithm on different coin systems and amounts, reporting results. 
 
 ### Statement Handled by Aditi Vignesh - PES1UG24CS023

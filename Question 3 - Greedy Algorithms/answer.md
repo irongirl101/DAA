@@ -42,3 +42,11 @@ Using optimal:
     5 + 6 = 11
     2 coins. 
 
+## 4. Use an appropriate data structure to efficiently track coins. 
+An array would be used. 
+
+## 5. Analyze the time complexity.  
+The time complexity would be Θ(n) 
+
+## 6. Test the algorithm on different coin systems and amounts, reporting results. 
+<requires images>
