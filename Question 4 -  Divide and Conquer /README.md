@@ -9,8 +9,8 @@ Your algorithm should consider three possibilities:
 
 
 ### Tasks
-- [ ] Design the divide-and-conquer algorithm.
-- [ ] Implement the algorithm
+- [x] Design the divide-and-conquer algorithm.
+- [x] Implement the algorithm
 - [ ] Derive the recurrence relation for the running time.
 - [ ] Solve the recurrence using the Master Theorem.
 - [ ] Compare the performance with the brute-force O(n?) solution.
