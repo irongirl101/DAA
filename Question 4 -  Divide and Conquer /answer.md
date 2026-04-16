@@ -56,5 +56,7 @@ f(n) = Θ(n^(log_b a))
 ```
 Therefore, time complexity = Θ(n log n)
 
-
 ## 5. Compare the performance with the brute-force O(n?) solution. 
+With Bruteforce approach = O(n^2)
+With divide and conquer approach = O(n log n)
+Kadane's Approach = O(n)
