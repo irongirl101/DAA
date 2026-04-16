@@ -1,4 +1,4 @@
-# Coin Problem 
+# Array Problem
 You are given an array A[O...n-1] containing both positive and negative integers representing daily profit or loss.
 Design a divide-and-conquer algorithm to determine the maximum sum of a contiguous subarray.
 
