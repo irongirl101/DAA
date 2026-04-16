@@ -50,10 +50,13 @@ The time complexity would be Θ(n).
 
 ## 6. Test the algorithm on different coin systems and amounts, reporting results. 
 ![image1](images/image1.png)
+
 Canonical Form
 
 ![image2](images/image2.png)
+
 Non Canonical Form 
 
 ![image3](images/image3.png)
+
 Canonical Form
