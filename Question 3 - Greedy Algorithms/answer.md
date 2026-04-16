@@ -2,7 +2,8 @@
 Strategy - Always pick the highest denomination coin that is less than or equal to the remaning amount. 
 
 ### Algorithm 
-``` ALG COIN(): 
+```
+ALG COIN(): 
     // input - coins with certain denominations ; amount to be calculated for 
     // output - number of coins required 
     c <- 0 
@@ -49,6 +50,10 @@ Using optimal:
 An array would be used. 
 
 ## 5. Analyze the time complexity.  
+Input = n (denominations)
+Basic Operation = Division.
+Depends on = Input only. 
+
 The time complexity would be Θ(n). 
 
 ## 6. Test the algorithm on different coin systems and amounts, reporting results. 
