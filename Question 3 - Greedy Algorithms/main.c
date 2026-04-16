@@ -11,12 +11,13 @@ int count(int n, int denomination[], int used[],int amount){
     return c; 
 }
 int main(){
-    int n = 0; // user input 
+    int n = 0; 
     int amount = 0; 
-    printf("Enter number of denomination on the coins in ascending order.\n"); 
+    printf("Enter number of denominations \n"); 
     scanf("%d", &n);
-    int denomination[n]; // this is to change to user input. 
+    int denomination[n]; 
     int used[n]; 
+    printf("Enter denominations seperated by a space in ascending order.\n"); 
     for(int i = 0; i<n;i++){
         scanf("%d", &denomination[i]); 
     }
@@ -24,6 +25,7 @@ int main(){
     scanf("%d",&amount);
     int result = count(n,denomination,used,amount); 
 
+    printf("Coins used\n"); 
     for(int i = n-1; i >= 0; i--){   
         if(used[i] > 0){
             printf("%d x %d\n", denomination[i], used[i]);
