@@ -1,36 +1,36 @@
-##1. Design a divide and conquer approach to merge skylines.
+## 1. Design a divide and conquer approach to merge skylines.
 
-###merge-sort style approach:
+### merge-sort style approach:
 
-##Steps:
+## Steps:
 - Divide buildings into two halves
 - Recursively compute skyline of each half
 - Merge the two skylines
 
-##Base Case
+## Base Case
 If only one building:
 
 ```
 (l,h,r)→[(l,h),(r,0)]
 ```
 
-###Merge Step
+### Merge Step
 We merge two skylines:
 - S_1: left skyline
 - S_2: right skyline
   
-###Maintained:
+### Maintained:
 - h_1: current height from S_1
 - h_2: current height from S_2
 - Result height = max⁡(h_1,h_2)
   
-###Logic:
+### Logic:
 - Compare x-coordinates from both skylines
 - Move pointer of smaller x
 - Update height
 - Add point only if height change
 
-##2. Handle overlapping buildings correctly
+## 2. Handle overlapping buildings correctly
 
 Overlapping is handled by:
 ```
