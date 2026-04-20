@@ -44,6 +44,7 @@ Please check main.c
 ## 3. Derive the recurrence relation for the running time.
 ### Recurrence Relation 
 ``` T(n) = 2T(n/2) + O(n) ``` 
+
 Therefore, time complexity = Θ(n log n)
 
 ## 4. Solve the recurrence using the Master Theorem.
