@@ -27,17 +27,23 @@ int maxCrossingSum(int arr[], int l, int mid, int r) {
     return left_sum + right_sum;
 }
 
-int maxSubarray(int arr[], int l, int r) {
+int maxSubarray(int arr[], int l, int r, int orig_l, int orig_r) {
     if (l == r)
         return arr[l];
 
     int mid = (l + r) / 2;
 
-    int left = maxSubarray(arr, l, mid);
-    int right = maxSubarray(arr, mid + 1, r);
+    int left = maxSubarray(arr, l, mid,  orig_l,  orig_r);
+    int right = maxSubarray(arr, mid + 1, r,  orig_l,  orig_r);
     int cross = maxCrossingSum(arr, l, mid, r);
 
-    return max(max(left, right), cross);
+    int ans = max(max(left, right), cross);
+    // if this segment is the whole array, don't allow full coverage
+    if (l == orig_l && r == orig_r && ans == cross) {
+        // force picking either left or right
+        ans = max(left, right);
+    }
+    return ans; 
 }
 
 int main() {
@@ -52,9 +58,9 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    int result = maxSubarray(arr, 0, n - 1);
+    int result = maxSubarray(arr, 0, n - 1,0,n-1);  
 
-    printf("Maximum subarray sum: %d\n", result);
+    printf("Maximum subarray sum: %d\n", result); 
 
     return 0;
 }
