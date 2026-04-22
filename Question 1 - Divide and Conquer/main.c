@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 typedef struct {
-    int x;
-    int h;
+    int x; // x -> coordinate 
+    int h;// h-> height at that point 
 } Point;
 
 Point* merge(Point* left, int n1, Point* right, int n2, int* size) {
@@ -47,7 +48,7 @@ Point* merge(Point* left, int n1, Point* right, int n2, int* size) {
 }
 
 Point* skyline(int buildings[][3], int low, int high, int* size) {
-    if (low == high) {
+    if (low == high) { // best case scenario 
         Point* res = (Point*)malloc(2 * sizeof(Point));
 
         res[0].x = buildings[low][0];
