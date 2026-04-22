@@ -78,7 +78,7 @@ At each step:
 ## 5. Time Complexity
 ```
 Using Master Theorem:
-T(n)=O(nlog⁡n)
+T(n)=Θ(nlog⁡n)
 ```
 
 ## 6. Prove the correctness of the merging step 
