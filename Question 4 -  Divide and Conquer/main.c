@@ -42,11 +42,6 @@ int maxSubarray(int arr[], int l, int r, int orig_l, int orig_r) {
 
     int ans = max(max(left, right), cross);
 
-    // block full array case
-    if (l == orig_l && r == orig_r && ans == cross) {
-        ans = max(left, right);
-    }
-
     return ans;
 }
 
@@ -62,9 +57,16 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
+    int total_sum = 0;
+    for (int i = 0; i < n; i++)
+        total_sum += arr[i];
+
     int result = maxSubarray(arr, 0, n - 1, 0, n - 1);
 
-    printf("Maximum subarray sum: %d\n", result);
-
-    return 0;
+    if (result == total_sum) {
+        int option1 = maxSubarray(arr, 1, n - 1, 0, n - 1);
+        int option2 = maxSubarray(arr, 0, n - 2, 0, n - 1);
+        result = max(option1, option2);
+    }
+    printf("%d", result);
 }
